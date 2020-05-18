@@ -7,10 +7,10 @@ import { Injectable } from '@angular/core'
 
 export class TestService {
 
-constructor() {}
+  constructor() {}
 
-getSomething(){
-  return "a value"
-}
+  getSomething(){
+    return "a value"
+  }
   
 }
