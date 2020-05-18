@@ -7,6 +7,6 @@ import { Router, Route } from '@angular/router';
   styleUrls: ['./stepper.component.css']
 })
 export class StepperComponent{
-  isLinear = false;
+  isLinear = true;
   
 }
