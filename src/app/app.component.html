@@ -17,21 +17,22 @@
   </mat-sidenav>
   <mat-sidenav-content>
     
-      <button
+
+      
+      <app-header [deviceXs]="deviceXs"></app-header>
+<button
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-      </button>
-      
-      <app-header [deviceXs]="deviceXs"></app-header>
-
+</button>
     <!-- Add Content Here -->
 
     <div class="router-content">
       <router-outlet></router-outlet>
+      {{ testvalue }}
     </div>
     
   </mat-sidenav-content>
