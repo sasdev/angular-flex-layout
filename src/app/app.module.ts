@@ -13,7 +13,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-
+import {MatStepperModule} from '@angular/material/stepper';
 
 
 import { AppComponent } from './app.component'
@@ -21,7 +21,7 @@ import { HelloComponent } from './hello.component'
 import { HeaderComponent } from './header/header.component'
 import { HomeComponent } from './pages/home/home.component'
 import { StepperComponent} from './pages/stepper/stepper.component'
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports:      [ 
@@ -38,7 +38,10 @@ import { StepperComponent} from './pages/stepper/stepper.component'
     MatInputModule,
     MatSidenavModule,
     MatCardModule,
-    MatListModule
+    MatListModule,
+    MatStepperModule,
+    MatFormFieldModule,
+    ReactiveFormsModule
     ],
   declarations: [ AppComponent, HelloComponent, HeaderComponent, HomeComponent, StepperComponent ],
   bootstrap:    [ AppComponent ]

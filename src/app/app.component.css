@@ -4,7 +4,17 @@ p {
   font-family: Lato;
 }
 
+/* ================== */
+/* Styles for sidenav */
+/* ================== */
+
 /* mat-toolbar { border: solid 1px red; } */
 app-sidenav { flex: 1 1 0; }
 app-sidenav { display: flex; }
 mat-drawer-container { flex: 1 1 auto; }
+
+
+.router-content{
+  border: solid 1px red;
+  max-width: 800px;
+}
