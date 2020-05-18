@@ -19,6 +19,7 @@ import { MatListModule } from '@angular/material/list';
 import { AppComponent } from './app.component'
 import { HelloComponent } from './hello.component'
 import { HeaderComponent } from './header/header.component'
+import { StepperComponent} from './pages/stepper/stepper.component'
 
 
 @NgModule({
@@ -38,7 +39,7 @@ import { HeaderComponent } from './header/header.component'
     MatCardModule,
     MatListModule
     ],
-  declarations: [ AppComponent, HelloComponent, HeaderComponent ],
+  declarations: [ AppComponent, HelloComponent, HeaderComponent, StepperComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

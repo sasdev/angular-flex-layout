@@ -8,7 +8,8 @@ import { StepperComponent} from './pages/stepper/stepper.component'
 
 
 const routes: Routes = [
-  { path: '', component: AppComponent }
+  { path: '', component: AppComponent },
+  { path: 'stepper', component: StepperComponent }
   // { path: 'companies', component: CompanyListComponent },
   // { path: 'company/:id', component: CompanyDetailComponent}
 ];
