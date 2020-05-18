@@ -13,6 +13,7 @@ import { map, shareReplay } from 'rxjs/operators';
 })
 export class AppComponent implements OnInit, OnDestroy {
   name = 'Angular'
+  
   //Declare mediatype with type Subscription
   mediaSub: Subscription
   deviceXs: boolean
