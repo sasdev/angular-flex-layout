@@ -20,7 +20,7 @@ import { HeaderComponent } from './header/header.component'
 import { HomeComponent } from './pages/home/home.component'
 import { StepperComponent} from './pages/stepper/stepper.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { TestService } from './services/test/test.service'
+// import { TestService } from './services/test/test.service'
 
 @NgModule({
   imports:      [ 
@@ -43,7 +43,7 @@ import { TestService } from './services/test/test.service'
     ReactiveFormsModule
     ],
   declarations: [ AppComponent, HeaderComponent, HomeComponent, StepperComponent ],
-  providers: [TestService],
+  // providers: [TestService],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule {

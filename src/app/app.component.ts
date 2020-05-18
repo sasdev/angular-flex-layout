@@ -35,6 +35,5 @@ export class AppComponent implements OnInit, OnDestroy {
   }
   ngOnDestroy(){
     this.mediaSub.unsubscribe()
-    
   }
 }

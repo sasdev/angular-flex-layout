@@ -1,0 +1,21 @@
+.mat-stepper-horizontal-line{
+  border: solid 3px red;
+  height:5px !important;
+
+}
+
+.mat-stepper-horizontal-line {
+    border-top-width: 44px !important;
+    border: 1px red solid !important;
+    }
+
+  .mat-stepper-horizontal-line {
+   border-top-style: solid;
+}
+
+
+
+.mat-step-header .mat-step-label.mat-step-label-active {
+    color: rgba(0,0,0,.87);
+    border: solid 1px red;
+}

@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router, Route } from '@angular/router';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import { TestService } from '../../services/test/test.service'
+import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 
 @Component({
   selector: 'stepper',
@@ -12,11 +12,19 @@ export class StepperComponent implements OnInit {
   isLinear = false;
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
+  smallScreen: boolean;
 
   constructor(
     private _formBuilder: FormBuilder,
-    public service: TestService
-    ) {}
+    breakpointObserver: BreakpointObserver
+    ) {
+        breakpointObserver.observe([
+          Breakpoints.XSmall,
+          Breakpoints.Small
+           ]).subscribe(result => {
+            this.smallScreen = result.matches;
+      });
+    }
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
