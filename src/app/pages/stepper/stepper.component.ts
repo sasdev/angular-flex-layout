@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router, Route } from '@angular/router';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
