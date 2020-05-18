@@ -5,7 +5,6 @@ import { Subscription } from 'rxjs'
 import { Observable } from 'rxjs';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { map, shareReplay } from 'rxjs/operators';
-import { TestService } from './services/test/test.service'
 
 @Component({
   selector: 'my-app',
@@ -26,9 +25,8 @@ export class AppComponent implements OnInit, OnDestroy {
       shareReplay()
     );
 
-  constructor(public mediaObserver:MediaObserver,private breakpointObserver: BreakpointObserver, private router: Router,public _service: TestService){}
+  constructor(public mediaObserver:MediaObserver,private breakpointObserver: BreakpointObserver, private router: Router){}
   ngOnInit(){
-    this.testvalue = this._service.getSomething()
     // Create a services to set var if device is mobile
     this.mediaSub = this.mediaObserver.media$.subscribe((result:MediaChange)=>{
       // console.log(result.mqAlias)
