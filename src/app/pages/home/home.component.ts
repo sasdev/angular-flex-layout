@@ -9,8 +9,7 @@ import { Component, OnInit, Input } from '@angular/core'
 })
 
 export class HomeComponent{
-  // public testvalue = ""
-  @Input() testvalue: string;
+ 
   constructor() {}
   ngOnInit(){
     // this.testvalue = this._service.getSomething()

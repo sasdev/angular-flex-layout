@@ -50,4 +50,9 @@ import { TestService } from './services/test/test.service'
 })
 export class AppModule {
     public testvalue = ""
+    
+    constructor(public _service: TestService){}
+    ngOnInit(){
+       this.testvalue = this._service.getSomething()
+    }
  }
