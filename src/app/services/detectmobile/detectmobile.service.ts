@@ -10,7 +10,7 @@ export class DetectMobileService {
   constructor() {}
 
   getSomething(){
-    return "a value"
+    return "a value from detect mobile"
   }
   
 }

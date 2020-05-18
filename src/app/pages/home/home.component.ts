@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core'
-import { TestService } from '../../services/test/test.service'
 import { DetectMobileService} from '../../services/detectmobile/detectmobile.service'
 
 @Component({
@@ -10,8 +9,8 @@ import { DetectMobileService} from '../../services/detectmobile/detectmobile.ser
 
 export class HomeComponent{
  
-  constructor(public _service: TestService) {}
+  constructor(private _detectmobile: DetectMobileService) {}
   ngOnInit(){
-    this.testvalue = this._service.getSomething()
+    this.testvalue = this._detectmobile.getSomething()
   }
 }
