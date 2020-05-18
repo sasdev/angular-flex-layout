@@ -14,7 +14,6 @@ import { TestService } from './services/test/test.service'
 })
 export class AppComponent implements OnInit, OnDestroy {
   name = 'Angular'
-  testvalue = ""
   
   //Declare mediatype with type Subscription
   mediaSub: Subscription

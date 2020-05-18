@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core'
-// import { TestService } from '../../services/test/test.service'
-
+import { TestService } from '../../services/test/test.service'
+import { DetectMobileService} from '../../services/detectmobile/detectmobile.service'
 
 @Component({
   selector: 'home',
@@ -10,8 +10,8 @@ import { Component, OnInit, Input } from '@angular/core'
 
 export class HomeComponent{
  
-  constructor() {}
+  constructor(public _service: TestService) {}
   ngOnInit(){
-    // this.testvalue = this._service.getSomething()
+    this.testvalue = this._service.getSomething()
   }
 }

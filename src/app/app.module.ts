@@ -15,9 +15,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import {MatStepperModule} from '@angular/material/stepper';
 
-
 import { AppComponent } from './app.component'
-import { HelloComponent } from './hello.component'
 import { HeaderComponent } from './header/header.component'
 import { HomeComponent } from './pages/home/home.component'
 import { StepperComponent} from './pages/stepper/stepper.component'
@@ -49,10 +47,5 @@ import { TestService } from './services/test/test.service'
   bootstrap:    [ AppComponent ]
 })
 export class AppModule {
-    public testvalue = ""
     
-    constructor(public _service: TestService){}
-    ngOnInit(){
-       this.testvalue = this._service.getSomething()
-    }
  }
