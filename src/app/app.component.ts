@@ -30,7 +30,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
     // Create a services to set var if device is mobile
     this.mediaSub = this.mediaObserver.media$.subscribe((result:MediaChange)=>{
-      console.log(result.mqAlias)
+      // console.log(result.mqAlias)
       this.deviceXs = result.mqAlias === 'xs' ? true : false
     })
   }

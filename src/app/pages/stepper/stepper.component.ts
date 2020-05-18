@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router, Route } from '@angular/router';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { TestService } from '../../services/test/test.service'
 
 @Component({
   selector: 'stepper',
@@ -12,7 +13,10 @@ export class StepperComponent implements OnInit {
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
 
-  constructor(private _formBuilder: FormBuilder) {}
+  constructor(
+    private _formBuilder: FormBuilder,
+    public service: TestService
+    ) {}
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
