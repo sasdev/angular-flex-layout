@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router, Route } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'home',
@@ -9,4 +9,5 @@ import { Router, Route } from '@angular/router';
 
 export class HomeComponent{
 
+  ngOnInit(){}
 }

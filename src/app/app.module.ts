@@ -19,7 +19,7 @@ import { MatListModule } from '@angular/material/list';
 import { AppComponent } from './app.component'
 import { HelloComponent } from './hello.component'
 import { HeaderComponent } from './header/header.component'
-import { HomeComponent } from './pages/home.component'
+import { HomeComponent } from './pages/home/home.component'
 import { StepperComponent} from './pages/stepper/stepper.component'
 
 
