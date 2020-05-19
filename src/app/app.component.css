@@ -14,9 +14,19 @@ app-sidenav { display: flex; }
 mat-drawer-container { flex: 1 1 auto; }
 
 
+mat-sidenav-container{
+ /* border: solid 12px yellow; */
+ height: 100%; 
+}
+
+mat-sidenav-content{
+  /* border: solid 1px red;   */
+}
+
+
 .router-content{
   /* border: solid 1px red; */
   max-width: 800px;
-  border: solid 1px red;
-  background-color: white;
+  /* border: solid 1px red; */
+  /* background-color: white; */
 }
