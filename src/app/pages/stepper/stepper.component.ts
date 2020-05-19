@@ -14,6 +14,8 @@ export class StepperComponent implements OnInit {
   secondFormGroup: FormGroup;
   smallScreen: boolean;
 
+  
+
   constructor(
     private _formBuilder: FormBuilder,
     breakpointObserver: BreakpointObserver
@@ -25,13 +27,6 @@ export class StepperComponent implements OnInit {
             this.smallScreen = result.matches;
       });
     }
-
-  ngOnInit() {
-    this.firstFormGroup = this._formBuilder.group({
-      firstCtrl: ['', Validators.required]
-    });
-    this.secondFormGroup = this._formBuilder.group({
-      secondCtrl: ['', Validators.required]
-    });
-  }
+    
+  ngOnInit() {}
 }

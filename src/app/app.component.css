@@ -17,4 +17,6 @@ mat-drawer-container { flex: 1 1 auto; }
 .router-content{
   /* border: solid 1px red; */
   max-width: 800px;
+  border: solid 1px red;
+  background-color: white;
 }

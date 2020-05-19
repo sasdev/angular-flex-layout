@@ -40,6 +40,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatListModule,
     MatStepperModule,
     MatFormFieldModule,
+    FormsModule,
     ReactiveFormsModule
     ],
   declarations: [ AppComponent, HeaderComponent, HomeComponent, StepperComponent ],

@@ -1,18 +1,25 @@
-<h1>Mobile Stepper</h1>
+<br>
+
+<h2 class="mat-h2" fxLayoutAlign="space-around center" >Mobile Stepper</h2>
 
 <mat-divider></mat-divider>
 
 <ng-template #stepOne>
+
+ <span class="section-header">Profile Info</span>
  
+<form class="example-form">
+  
       <mat-form-field>
         <mat-label>Name</mat-label>
-        <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+        <input matInput placeholder="Last name, First name" required>
       </mat-form-field>
         <br>
       <mat-form-field>
         <mat-label>Surname</mat-label>
-        <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+        <input matInput placeholder="Last name, First name" required>
       </mat-form-field>
+</form>
 
 </ng-template>
 
