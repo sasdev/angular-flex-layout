@@ -1,6 +1,19 @@
+<h1>Mobile Stepper</h1>
+
+<mat-divider></mat-divider>
 
 <ng-template #stepOne>
-  <div>step one</div>
+ 
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+      </mat-form-field>
+        <br>
+      <mat-form-field>
+        <mat-label>Surname</mat-label>
+        <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+      </mat-form-field>
+
 </ng-template>
 
 <ng-template #stepTwo>
@@ -17,16 +30,16 @@
 
 <ng-template [ngIf]="smallScreen" [ngIfElse]="bigScreen">
   <mat-vertical-stepper linear #stepper >
-    <mat-step>
+    <mat-step label="Step One">
       <ng-container *ngTemplateOutlet="stepOne"></ng-container>
     </mat-step>
-    <mat-step>
+    <mat-step label="Step Two">
       <ng-container *ngTemplateOutlet="stepTwo"></ng-container>
     </mat-step>
-    <mat-step>
+    <mat-step  label="Step Three">
       <ng-container *ngTemplateOutlet="stepThree"></ng-container>
     </mat-step>
-    <mat-step>
+    <mat-step  label="Step Four">
       <ng-container *ngTemplateOutlet="stepFour"></ng-container>
     </mat-step>
   </mat-vertical-stepper>
@@ -34,16 +47,16 @@
 
 <ng-template #bigScreen>
   <mat-horizontal-stepper linear #stepper >
-    <mat-step>
+    <mat-step label="Step One">
       <ng-container *ngTemplateOutlet="stepOne"></ng-container>
     </mat-step>
-    <mat-step >
+    <mat-step  label="Step Two">
       <ng-container *ngTemplateOutlet="stepTwo"></ng-container>
     </mat-step>
-    <mat-step>
+    <mat-step label="Step Three">
       <ng-container *ngTemplateOutlet="stepThree"></ng-container>
     </mat-step>
-    <mat-step>
+    <mat-step label="Step Four">
       <ng-container *ngTemplateOutlet="stepFour"></ng-container>
     </mat-step>
   </mat-horizontal-stepper>
