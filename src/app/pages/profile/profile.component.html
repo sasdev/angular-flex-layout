@@ -1,6 +1,6 @@
 <h1>Profile</h1>
 
-<div class="profile-section">
+<div class="profile-section" fxFlex="50">
   Back - Profile - Edit
 </div>
 
@@ -9,10 +9,22 @@
   <div class="user-details-section">User details</div>
 </div>
 
-<div class="">
+<div class="profile-tabs">
   <mat-tab-group>
     <mat-tab label="First"> Content 1 </mat-tab>
     <mat-tab label="Second"> Content 2 </mat-tab>
     <mat-tab label="Third"> Content 3 </mat-tab>
   </mat-tab-group>
 </div>
+
+
+<div fxLayout="row" fxLayout.lt-md="column"  fxLayoutGap="10px">
+        <div fxLayout.gt-md="row" fxLayout.lt-sm="column"  fxLayoutGap="10px" fxFlex="100"  fxFlex.gt-md="50">
+          <div fxFlex.lt-md="50" fxFlex.lt-sm="100" >1</div>
+          <div fxFlex.lt-md="50" fxFlex.lt-sm="100" >2</div>
+        </div>
+        <div fxLayout.gt-md="row" fxLayout.lt-sm="column" fxLayoutGap="10px" fxFlex="100"   fxFlex.gt-md="50">
+          <div fxFlex.lt-md="50" fxFlex.lt-sm="100" >3</div>
+          <div fxFlex.lt-md="50" fxFlex.lt-sm="100" >4</div>
+        </div>
+      </div>
