@@ -14,6 +14,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import {MatStepperModule} from '@angular/material/stepper';
+import {MatTabsModule} from '@angular/material/tabs';
 
 import { AppComponent } from './app.component'
 import { HeaderComponent } from './header/header.component'
@@ -42,7 +43,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatStepperModule,
     MatFormFieldModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatTabsModule
     ],
   declarations: [ AppComponent, HeaderComponent, HomeComponent, StepperComponent, ProfileComponent ],
   // providers: [TestService],
