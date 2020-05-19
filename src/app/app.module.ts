@@ -19,6 +19,7 @@ import { AppComponent } from './app.component'
 import { HeaderComponent } from './header/header.component'
 import { HomeComponent } from './pages/home/home.component'
 import { StepperComponent} from './pages/stepper/stepper.component'
+import { ProfileComponent } from './pages/profile/profile.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import { TestService } from './services/test/test.service'
 
@@ -43,7 +44,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule
     ],
-  declarations: [ AppComponent, HeaderComponent, HomeComponent, StepperComponent ],
+  declarations: [ AppComponent, HeaderComponent, HomeComponent, StepperComponent, ProfileComponent ],
   // providers: [TestService],
   bootstrap:    [ AppComponent ]
 })
