@@ -1,3 +1,24 @@
 fxlayout.lt-md{
-  border: solid px red;
+  /* border: solid 1px yellow !important; */
+}
+
+.flex-1{
+ /* border: solid 1px red !important; */
+  background-color: grey;
+  height:50px;
+}
+
+.flex-2{
+ /* border: solid 1px blue !important; */
+  background-color: darkgray;
+}
+
+.flex-3{
+ /* border: solid 1px blue !important; */
+ background-color: white;
+}
+
+.flex-4{
+ /* border: solid 1px blue !important; */
+ background-color: yellow;
 }
