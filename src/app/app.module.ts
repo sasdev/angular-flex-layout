@@ -21,6 +21,7 @@ import { HeaderComponent } from './header/header.component'
 import { HomeComponent } from './pages/home/home.component'
 import { StepperComponent} from './pages/stepper/stepper.component'
 import { ProfileComponent } from './pages/profile/profile.component'
+import { FxFlexComponent } from './pages/fxflex/fxflex.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import { TestService } from './services/test/test.service'
 
@@ -46,7 +47,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     MatTabsModule
     ],
-  declarations: [ AppComponent, HeaderComponent, HomeComponent, StepperComponent, ProfileComponent ],
+  declarations: [ AppComponent, HeaderComponent, HomeComponent, StepperComponent, ProfileComponent, FxFlexComponent ],
   // providers: [TestService],
   bootstrap:    [ AppComponent ]
 })
