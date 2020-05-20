@@ -6,10 +6,11 @@
         <span class="logo">Mobile : {{ deviceXs }}</span>
       </button>
       <div *ngIf="!deviceXs" fxLayout="row">
-        <button mat-button>Home</button>
-        <button mat-button>About us</button>
-        <button mat-button>Contact us</button>
-        
+        <a mat-button routerLinkActive="mat-warn" routerLink="">Home</a>
+        <a mat-button routerLinkActive="mat-warn" routerLink="stepper">Stepper</a>
+        <a mat-button routerLinkActive="mat-warn" routerLink="profile">Profile</a>
+        <a mat-button routerLinkActive="mat-warn" routerLink="fxflex">FxFlex</a>
+
       </div>
     </div>
     <div>
@@ -27,9 +28,10 @@
     </div>
   </mat-toolbar-row>
   <mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-between end">
-    <button mat-button>Home</button>
-    <button mat-button>About us</button>
-    <button mat-button>Contact us</button>
+        <a mat-button routerLinkActive="mat-warn" routerLink="">Home</a>
+        <a mat-button routerLinkActive="mat-warn" routerLink="stepper">Stepper</a>
+        <a mat-button routerLinkActive="mat-warn" routerLink="profile">Profile</a>
+        <a mat-button routerLinkActive="mat-warn" routerLink="fxflex">FxFlex</a>
 
 
 

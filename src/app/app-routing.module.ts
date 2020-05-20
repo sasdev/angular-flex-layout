@@ -11,6 +11,7 @@ import { FxFlexComponent } from './pages/fxflex/fxflex.component'
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'stepper', component: StepperComponent },
   { path: 'profile', component: ProfileComponent},
   { path: 'fxflex', component: FxFlexComponent }
