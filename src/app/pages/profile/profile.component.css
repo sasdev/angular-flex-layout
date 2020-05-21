@@ -1,10 +1,12 @@
 .profile-section{
-  border: solid 1px red;
+  background-color: #27ae60;
+  height: 400px;
 }
 .user-section{
     border: solid 1px red;
 }
 .profile-tabs{
-    border: solid 1px red;
+    background-color: #2980b9;
+    height: 400px;
 }
 
