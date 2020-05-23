@@ -14,7 +14,7 @@
       </div>
     </div>
     <div>
-      <!-- <button *ngIf="deviceXs" mat-icon-button [matMenuTriggerFor]="menu">
+      <button *ngIf="deviceXs" mat-icon-button [matMenuTriggerFor]="menu">
         <mat-icon>more_vert</mat-icon>
       </button>
       <button
@@ -24,7 +24,7 @@
         fxLayoutAlign="end"
       >
         Menu
-      </button> -->
+      </button>
     </div>
   </mat-toolbar-row>
   <mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-between end">
@@ -32,9 +32,6 @@
         <a mat-button routerLinkActive="mat-warn" routerLink="stepper">Stepper</a>
         <a mat-button routerLinkActive="mat-warn" routerLink="profile">Profile</a>
         <a mat-button routerLinkActive="mat-warn" routerLink="fxflex">FxFlex</a>
-
-
-
   </mat-toolbar-row>
 </mat-toolbar>
 <!-- Menu Items -->

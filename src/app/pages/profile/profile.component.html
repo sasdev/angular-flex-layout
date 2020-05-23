@@ -3,14 +3,20 @@
 <div fxLayout="column" fxLayoutAlign=" none" fxLayout.gt-sm="row" >
 
 <div class="flex-3" fxFlex="50">
-  <div class="profile-section">
-      Back - Profile - Edit
+
+  <div class="profile-section" fxLayout="row" fxLayoutAlign=" center " >
+    <div fxFlex="10">
+         <button mat-icon-button><mat-icon>chevron_left</mat-icon></button>
+    </div>
+    <div fxFlex="80"><h1 class="mat-h4">Personal Details</h1></div>
+    <div fxFlex="10">   <button mat-icon-button><mat-icon>edit</mat-icon></button></div>
   </div>
 
   <div class='user-section'> 
-    <div class="user-profile-image"><img src="/../../../../../../assets/images/avatar.png"></div>
+    <div class="user-profile-image">image</div>
     <div class="user-details-section">User details</div>
   </div>
+
 </div>
 
   
@@ -26,3 +32,4 @@
 </div>
 
 </div>
+

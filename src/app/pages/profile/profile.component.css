@@ -1,9 +1,11 @@
 .profile-section{
   background-color: #27ae60;
-  height: 400px;
+  /* height: 200px; */
+  height: 10%;
 }
 .user-section{
     border: solid 1px red;
+    height: 90%;
 }
 .profile-tabs{
     background-color: #2980b9;
