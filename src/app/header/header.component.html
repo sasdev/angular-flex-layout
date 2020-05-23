@@ -1,41 +1,50 @@
 <mat-toolbar color="primary" class="sticky">
-  <mat-toolbar-row fxLayoutAlign="space-between center">
-    <div fxLayout="row">
-      <button mat-button>
-        <mat-icon>home</mat-icon>
-        <span class="logo">Mobile : {{ deviceXs }}</span>
+	<mat-toolbar-row fxLayoutAlign="space-between center">
+		<div fxLayout="row">
+			<button mat-button>
+        <span class="logo">Mobile Demo</span>
       </button>
-      <div *ngIf="!deviceXs" fxLayout="row">
-        <a mat-button routerLinkActive="mat-warn" routerLink="">Home</a>
-        <a mat-button routerLinkActive="mat-warn" routerLink="stepper">Stepper</a>
-        <a mat-button routerLinkActive="mat-warn" routerLink="profile">Profile</a>
-        <a mat-button routerLinkActive="mat-warn" routerLink="fxflex">FxFlex</a>
+			<button mat-icon-button [matMenuTriggerFor]="menu" class="menu-dropdown">
+      <!-- pass local reference of mat-menu to be opened on this click -->
+      <mat-icon>more_vert</mat-icon>
+      </button>
+			<div *ngIf="!deviceXs" fxLayout="row">
+				<a mat-button routerLinkActive="mat-warn" routerLink="home">Home</a>
+				<a mat-button routerLinkActive="mat-warn" routerLink="stepper">Stepper</a>
+				<a mat-button routerLinkActive="mat-warn" routerLink="profile">Profile</a>
+				<a mat-button routerLinkActive="mat-warn" routerLink="fxflex">FxFlex</a>
 
-      </div>
-    </div>
-    <div>
-      <button *ngIf="deviceXs" mat-icon-button [matMenuTriggerFor]="menu">
+			</div>
+		</div>
+		<div>
+			<!-- <button *ngIf="deviceXs" mat-icon-button [matMenuTriggerFor]="menu">
         <mat-icon>more_vert</mat-icon>
       </button>
       <button
         *ngIf="!deviceXs"
         mat-button
         [matMenuTriggerFor]="menu"
+        (click)="drawer.toggle()"
         fxLayoutAlign="end"
       >
         Menu
-      </button>
-    </div>
-  </mat-toolbar-row>
-  <mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-between end">
-        <a mat-button routerLinkActive="mat-warn" routerLink="">Home</a>
-        <a mat-button routerLinkActive="mat-warn" routerLink="stepper">Stepper</a>
-        <a mat-button routerLinkActive="mat-warn" routerLink="profile">Profile</a>
-        <a mat-button routerLinkActive="mat-warn" routerLink="fxflex">FxFlex</a>
-  </mat-toolbar-row>
+      </button> -->
+		</div>
+	</mat-toolbar-row>
+	<mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-between end">
+		<a mat-button routerLinkActive="mat-accent" routerLink="home">Home</a>
+		<a mat-button routerLinkActive="mat-accent" routerLink="stepper">Stepper</a>
+		<a mat-button routerLinkActive="mat-accent" routerLink="profile">Profile</a>
+		<a mat-button routerLinkActive="mat-accent" routerLink="fxflex">FxFlex</a>
+	</mat-toolbar-row>
 </mat-toolbar>
-<!-- Menu Items -->
-<!-- <mat-menu #menu="matMenu" fxLayoutAlign="end">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu> -->
+
+
+
+<mat-menu #menu="matMenu">
+	<!-- give local reference and tell this is manu by assigning 'matMenu' -->
+	<button mat-menu-item>
+    <mat-icon>person</mat-icon>
+    <span>Logout</span>
+  </button>
+</mat-menu>

@@ -1,49 +1,68 @@
 <h2>Example 1</h2>
 
 
-<div class="bounds" fxLayout="column" fxLayoutAlign=" none" >
+<div class="b1" fxLayout="column" fxLayoutAlign=" none">
 
-  <div class="flex-3">item1</div>
+	<div class="f3">item1</div>
 
-  <div class="flex-2">item2</div>
+	<div class="f2">item2</div>
 
 </div>
 
 <hr>
 
 <h2>Example 2 </h2>
-<div class="bounds" fxLayout="row" fxLayoutAlign=" none" >
-  <div class="flex-3" fxFlex="50">item1</div>
-  <div class="flex-2" fxFlex="50">item2</div>
+<div class="b1" fxLayout="row" fxLayoutAlign=" none">
+	<div class="f3" fxFlex="50">item1</div>
+	<div class="f2" fxFlex="50">item2</div>
 </div>
 
 <hr>
 
 <h2>Example 3</h2>
-<div class="bounds" fxLayout="row" fxLayoutAlign="none" fxLayout.xs="column">
-  <div class="flex-1" fxFlex="20">item1</div>
-  <div class="flex-2" fxFlex="50">item2</div>
-  <div class="flex-3" fxFlex="30">item2</div>
+<div class="b1" fxLayout="row" fxLayoutAlign="none" fxLayout.xs="column">
+	<div class="f1" fxFlex="20">item1</div>
+	<div class="f2" fxFlex="50">item2</div>
+	<div class="f3" fxFlex="30">item2</div>
 </div>
 <hr>
 
 <h2>Example 4</h2>
 
-<div class="bounds" fxLayout="row" fxLayoutAlign="none" fxLayout.xs="column">
-  <div class="flex-1" fxFlex="50">
-    <div class="bounds" class="flex-4">item 1 A</div>
-    <div class="bounds" class="flex-3">item 1 B</div>
-  </div>
-  <div class="flex-2" fxFlex="50">item2</div>
+<div class="b1" fxLayout="row" fxLayoutAlign="none" fxLayout.xs="column">
+	<div class="f1" fxFlex="50">
+		<div class="b1 f4">item 1 A</div>
+		<div class="b1 f3">item 1 B</div>
+	</div>
+	<div class="f2" fxFlex="50">item2</div>
 </div>
 <hr>
 
 <h2>Example 5</h2>
-<div class="bounds" fxLayout="row" fxLayoutAlign="none" fxLayout.xs="column">
-  <div class="flex-1" fxFlex="50">item1
-       <div class="bounds" class="flex-4">item 1 A</div>
-       <div class="bounds" class="flex-3">item 1 B</div>
-  </div>
-  <div class="flex-2" fxFlex="50">item2</div>
+<div class="b1" fxLayout="row" fxLayoutAlign="none" fxLayout.xs="column">
+	<div class="f1" fxFlex="50">item1
+		<div class="b1 f4">item 1 A</div>
+		<div class="b1 f3">item 1 B</div>
+	</div>
+	<div class="f2" fxFlex="50">item2</div>
 </div>
 
+<hr>
+
+<h2>Example 6</h2>
+
+
+<div class="b1" fxLayout="column" fxLayoutAlign=" center">
+  <div class="container b2">
+    <div class="b1" fxLayout="row" fxLayoutAlign="none">
+    	<div class="f1" fxFlex="50">item1</div>
+    	<div class="f2" fxFlex="50">item2</div>
+    </div>
+  </div>
+</div>
+
+<div layout="row" layout-fill layout-align="center center">
+  <div>one</div>
+  <div>two</div>
+  <div>three</div>
+</div>

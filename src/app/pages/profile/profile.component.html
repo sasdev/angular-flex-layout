@@ -1,20 +1,19 @@
-<h1>Profile</h1>
 
-<div fxLayout="column" fxLayoutAlign=" none" fxLayout.gt-sm="row" >
+<div fxLayout="column" fxLayoutAlign=" none" fxLayout.gt-sm="row"  >
 
 <div class="flex-3" fxFlex="50">
 
-  <div class="profile-section" fxLayout="row" fxLayoutAlign=" center " >
+  <div class="profile-section" fxLayout="row" fxLayoutAlign="none center" >
     <div fxFlex="10">
          <button mat-icon-button><mat-icon>chevron_left</mat-icon></button>
     </div>
-    <div fxFlex="80"><h1 class="mat-h4">Personal Details</h1></div>
-    <div fxFlex="10">   <button mat-icon-button><mat-icon>edit</mat-icon></button></div>
+    <div fxFlex="80" class="test" fxLayoutAlign="center center"><div>Personal Details</div></div>
+    <div fxFlex="10"><button mat-icon-button><mat-icon>edit</mat-icon></button></div>
   </div>
 
-  <div class='user-section'> 
-    <div class="user-profile-image">image</div>
-    <div class="user-details-section">User details</div>
+  <div class="user-section"> 
+    <div class="user-profile-image" fxLayoutAlign="center center">image</div>
+    <div class="user-details-section" fxLayoutAlign="center center">User details</div>
   </div>
 
 </div>

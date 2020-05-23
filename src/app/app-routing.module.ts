@@ -10,7 +10,7 @@ import { FxFlexComponent } from './pages/fxflex/fxflex.component'
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'home', component: HomeComponent },
   { path: 'stepper', component: StepperComponent },
   { path: 'profile', component: ProfileComponent},

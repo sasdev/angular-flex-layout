@@ -1,28 +1,52 @@
+/* ========================================= */
+/* These styles are used on all the examples */
+/* ========================================= */
+
+.b1{
+  border: solid 4px red;
+}
+
+.b2{
+  border: solid 4px blue;
+}
+
+.f1{
+   /* border: solid 1px red !important; */
+  background-color:#038387;
+  height:50px;
+}
+
+.f2{
+ /* border: solid 1px blue !important; */
+  background-color: #00B294;
+}
+
+.f3{
+ /* border: solid 1px blue !important; */
+ background-color: #0099BC;
+}
+
+.f4{
+ /* border: solid 1px blue !important; */
+ background-color: #2D7D9A;
+}
+
+.f5{
+  background-color: #486860;
+}
+
+.f6{
+  background-color: #647C64;
+}
+
 fxlayout.lt-md{
   /* border: solid 1px yellow !important; */
 }
 
-.bounds{
-  /* border: solid 5px red; */
-}
 
-.flex-1{
- /* border: solid 1px red !important; */
-  background-color:orange;
-  height:50px;
-}
+/* Example 6 */
 
-.flex-2{
- /* border: solid 1px blue !important; */
-  background-color: blue;
-}
-
-.flex-3{
- /* border: solid 1px blue !important; */
- background-color: green;
-}
-
-.flex-4{
- /* border: solid 1px blue !important; */
- background-color: yellow;
+.container{
+  max-width: 600px;
+  min-width: 300px;
 }

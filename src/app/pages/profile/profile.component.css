@@ -1,14 +1,27 @@
 .profile-section{
-  background-color: #27ae60;
+  background-color: #1abc9c;
   /* height: 200px; */
   height: 10%;
 }
 .user-section{
-    border: solid 1px red;
+    /* border: solid 1px red; */
     height: 90%;
 }
 .profile-tabs{
-    background-color: #2980b9;
+    background-color:#ecf0f1;
     height: 400px;
 }
 
+.user-profile-image{
+  background-color: #95a5a6;
+  height: 150px;
+}
+
+.user-details-section{
+  background-color: #7f8c8d;
+  height: 210px;
+}
+
+.test{
+  /* border: solid 1px red; */
+}

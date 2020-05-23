@@ -30,3 +30,10 @@ mat-sidenav-content{
   /* border: solid 1px red; */
   /* background-color: white; */
 }
+
+.menu-open{
+  /* border: solid 1px red; */
+  position: absolute;
+  color: white;
+  top: 7px;
+}
