@@ -2,28 +2,34 @@
 /* These styles are used on all the examples */
 /* ========================================= */
 
+hr{
+  margin-top: 15px;
+}
+
 .b1{
-  border: solid 4px red;
+  border: solid 4px #ff7979;
 }
 
 .b2{
-  border: solid 4px blue;
+  border: solid 4px #686de0;
 }
 
 .f1{
    /* border: solid 1px red !important; */
   background-color:#038387;
-  height:50px;
+  /* height:50%; */
 }
 
 .f2{
  /* border: solid 1px blue !important; */
   background-color: #00B294;
+  /* height:  50%; */
 }
 
 .f3{
  /* border: solid 1px blue !important; */
  background-color: #0099BC;
+ /* height: 50%; */
 }
 
 .f4{
