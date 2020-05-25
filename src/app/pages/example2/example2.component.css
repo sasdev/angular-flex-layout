@@ -1,7 +1,9 @@
 .f2{
-  height: 400px;
+  height: 400px !important;
+  /* padding: 10px; */
 }
 
 .f3{
-  height: 500px;
+  height: 200px;
+  /* padding: 10px; */
 }

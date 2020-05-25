@@ -4,11 +4,8 @@
 			<button mat-button>
         <span class="logo">Mobile Demo</span>
       </button>
-			<button mat-icon-button [matMenuTriggerFor]="menu" class="menu-dropdown">
-      <!-- pass local reference of mat-menu to be opened on this click -->
-      <mat-icon>more_vert</mat-icon>
-      </button>
-			<div *ngIf="!deviceXs" fxLayout="row">
+		
+			<div *ngIf="!deviceXs" fxLayout="row" fxLayout.xs="column">
 				<a mat-button routerLinkActive="mat-warn" routerLink="home">Home</a>
 				<a mat-button routerLinkActive="mat-warn" routerLink="stepper">Stepper</a>
 				<a mat-button routerLinkActive="mat-warn" routerLink="example1">Example 1</a>
@@ -42,10 +39,3 @@
 
 
 
-<mat-menu #menu="matMenu">
-	<!-- give local reference and tell this is manu by assigning 'matMenu' -->
-	<button mat-menu-item>
-    <mat-icon>person</mat-icon>
-    <span>Logout</span>
-  </button>
-</mat-menu>
