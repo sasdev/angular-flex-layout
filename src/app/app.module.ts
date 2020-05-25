@@ -23,6 +23,7 @@ import { StepperComponent} from './pages/stepper/stepper.component'
 import { Example1Component } from './pages/example1/example1.component'
 import { FxFlexComponent } from './pages/fxflex/fxflex.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Example2Component } from './pages/example2/example2.component';
 // import { TestService } from './services/test/test.service'
 
 @NgModule({
@@ -47,7 +48,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     MatTabsModule
     ],
-  declarations: [ AppComponent, HeaderComponent, HomeComponent, StepperComponent, Example1Component, FxFlexComponent ],
+  declarations: [ AppComponent, HeaderComponent, HomeComponent, StepperComponent, Example1Component, FxFlexComponent, Example2Component ],
   // providers: [TestService],
   bootstrap:    [ AppComponent ]
 })
