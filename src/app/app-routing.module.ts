@@ -6,6 +6,7 @@ import { StepperComponent } from './pages/stepper/stepper.component'
 import { HomeComponent } from './pages/home/home.component'
 import { Example1Component } from './pages/example1/example1.component'
 import { Example2Component } from './pages/example2/example2.component'
+import { Example3Component } from './pages/example3/example3.component'
 import { FxFlexComponent } from './pages/fxflex/fxflex.component'
 
 
