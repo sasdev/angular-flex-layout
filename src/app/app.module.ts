@@ -24,6 +24,7 @@ import { Example1Component } from './pages/example1/example1.component'
 import { FxFlexComponent } from './pages/fxflex/fxflex.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Example2Component } from './pages/example2/example2.component';
+import { Example3Component } from './pages/example3/example3.component';
 // import { TestService } from './services/test/test.service'
 
 @NgModule({
@@ -48,7 +49,7 @@ import { Example2Component } from './pages/example2/example2.component';
     ReactiveFormsModule,
     MatTabsModule
     ],
-  declarations: [ AppComponent, HeaderComponent, HomeComponent, StepperComponent, Example1Component, FxFlexComponent, Example2Component ],
+  declarations: [ AppComponent, HeaderComponent, HomeComponent, StepperComponent, Example1Component, FxFlexComponent, Example2Component, Example3Component ],
   // providers: [TestService],
   bootstrap:    [ AppComponent ]
 })

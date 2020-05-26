@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: 'stepper', component: StepperComponent },
   { path: 'example1', component: Example1Component},
   { path: 'example2', component: Example2Component},
+  { path: 'example3', component: Example3Component},
   { path: 'fxflex', component: FxFlexComponent }
 
   // { path: 'companies', component: CompanyListComponent },
